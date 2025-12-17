@@ -15,7 +15,6 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 10 
 
 const storage = createGcs();
 
-app.get("/api/health", (req, res) => res.json({ ok: true }));
 
 // Create note (MongoDB)
 app.post("/api/notes", async (req, res) => {
